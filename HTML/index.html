@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bavin | Portfolio</title>
+        <meta name="Description"content="Leraning HTML and CSS">
+        <meta charset="utf-8">
+        <meta name="robots" content="index,follow" />
+        <link rel="icon" href="/images/icon.ico">
+        <meta name="viewport" content="width=device width,initial scale=1">
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+    <body>
+        <h1>Portfolio</h1>
+        <img class="dark-theme" src="/moon.png" alt="dark-mode" id="darkicon"> 
+        <img class="dp" src="images/me.jpg">
+        <h2 class="about">Bavin | Student | Web Developer | Gamer</h2>
+        <div class="me">
+            <h3>Personal Details</h3>
+            <p class="">Hello there ,I am  Bavin P T currrently pursuing a UG degree in Kumaraguru College of Technology,Coimbatore.
+            I did my schooling in SKV Matriculation Higher Secondary School,Namakkal.
+            I am a quick thinker and I have learnt C and Python.I am learning HTML and CSS through this task.
+            I am currently working on 3D animation designing.I have a lot of interest in this because I love playing games.
+            </p>
+            <video controls src="images/Arthur_Morgan._Sleepwalker_4K_RDR2_edit__Be2FtkqSmqI_136.mp4"></video>
+        </div>
+        <div>
+            <h4>Hobbies and Interest</h4>
+            <p class="hobby">My Hobbies and Interest includes reading books,solving cubes and games.
+                Recently I have installed and played RDR 2 which I love the most and this game give me the interest in developing game.
+                Yes,I am interested in game development too!!! I am little bit curious to develop games and I am currently studying for game development.
+                Below,I have attached my favourite games and books.
+            </p>
+            
+            <table class="book" bgcolor="var(--secondary-color)" width="400">
+                <tr class="a">
+                    <th width="200">Books</th>
+                    <th width="200">Genre</th>
+                </tr>
+                <tr bgcolor="var(--primary-color)" align="center">
+                    <td>Life of Pi</td>
+                    <td>Novel,Fiction</td>
+                </tr>
+                <tr bgcolor="var(--primary-color)" align="center">
+                    <td>The 5 AM Club</td>
+                    <td>Self help</td>
+                </tr>
+                <tr bgcolor="var(--primary-color)" align="center">
+                    <td>Becoming</td>
+                    <td>Memoir</td>
+                </tr>
+            </table>
+            <table class="game" bgcolor="var(--secondary-color)" width="400">
+                <tr class="b">
+                    <th width="200">Games</th>
+                    <th width="200">Genre</th>
+                </tr>
+                <tr bgcolor="var(--primary-color)" align="center">
+                    <td>Red Dead Redemption 2</td>
+                    <td>Action,Adventure</td>
+                </tr>
+                <tr  bgcolor="var(--primary-color)" align="center">
+                    <td>Grand theft Auto V</td>
+                    <td>Open world</td>
+                </tr>
+                <tr  bgcolor="var(--primary-color)" align="center">
+                    <td>Uncharted </td>
+                    <td>Open world,shooting</td>
+                </tr>
+            </table>
+            <img class="pic" src="images/hobby.png">
+            <p class="img"> The above image shows my interest in programming.I love to do code and solve complex problems because it strengthens my logical thinking.</p>
+        </div>
+        <div>
+            <h6 class="res">My Resources</h6>
+            <p class="l">I usually watch Tech Boss Youtube channel who gives information about phones and other kind of stuffs and A2D channel for basic knowledge of computers.
+                And I watch Free code camp.org to develop my programming skills
+            </p>
+            <a target="_blank" href="https://youtube.com/@techbossindia?si=fXDILJ5-nccZxtur">Tech Boss</a>
+            <a target="_blank" href="https://youtube.com/@a2dchannel?si=BPQ0ZqESu9WK8Tdp">A2D Channel</a>
+            <a target="_blank" href="https://youtube.com/@freecodecamp?si=_MEW6CGYNuBqiqrb">Freecodecamp.org</a>
+        </div>
+        <h5>Feedback</h5>
+        <form class="feed">
+            <label for="user">Name</label>
+            <input type="text" id="user">
+            <label>Mobile number</label>
+            <input type="mobile number">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+        </form>
+        <button>Submit</button>
+        <script>
+            
+        var icon = document.getElementById("darkicon");
+        var table = document.getElementById("game");
+
+        icon.onclick = function () {
+            console.log("Hi");
+            var htmlElement = document.querySelector('html');
+            if (htmlElement.style.getPropertyValue('--primary-color') === 'white') {
+                icon.src = "/images/sun.png"
+                htmlElement.style.setProperty('--primary-color', 'black');
+                htmlElement.style.setProperty('--secondary-color', 'white');
+            } else {
+                icon.src = "/images/moon.png"
+                htmlElement.style.setProperty('--primary-color', 'white');
+                htmlElement.style.setProperty('--secondary-color', 'black');
+            }
+        }
+    
+        </script>
+    </body>
+</html>    
